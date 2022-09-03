@@ -2,6 +2,7 @@ import React from "react";
 import { HomeJumbotron } from "./HomeJumbotron";
 import { HomeProducts } from "./HomeProducts";
 import { HomeServices } from "./HomeServices";
+import { HomeQuotation } from "./HomeQuotation";
 
 export default function Home() {
   return (
@@ -9,6 +10,7 @@ export default function Home() {
       <HomeJumbotron />
       <HomeProducts />
       <HomeServices />
+      <HomeQuotation />
     </>
   );
 }
