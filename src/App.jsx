@@ -6,6 +6,7 @@ import About from "./screens/About";
 import Contact from "./screens/Contact";
 import Home from "./screens/Home";
 import Products from "./screens/Products";
+import "./App.scss";
 
 export default function App() {
   return (
@@ -13,9 +14,9 @@ export default function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/" element={<About />} />
-        <Route path="/" element={<Products />} />
-        <Route path="/" element={<Contact />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/products" element={<Products />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
       <Footer />
     </>
