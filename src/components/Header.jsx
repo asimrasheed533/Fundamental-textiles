@@ -9,7 +9,7 @@ export default function Header() {
   const [isScrolling, setIsScrolling] = React.useState(false);
 
   function changeNavOpenClose() {
-    if (window.innerWidth < 1000) {
+    if (window.innerWidth <= 1000) {
       setIsOpen(false);
     } else {
       setIsOpen(true);
@@ -32,14 +32,14 @@ export default function Header() {
   return (
     <ClickAwayListener
       onClickAway={() => {
-        if (window.innerWidth < 1000) {
+        if (window.innerWidth <= 1000) {
           setIsOpen(false);
         }
       }}
     >
       <div
         className={
-          isOpen && window.innerWidth < 1000
+          isOpen && window.innerWidth <= 1000
             ? "header header__active"
             : isScrolling
             ? "header header__active"
@@ -55,7 +55,7 @@ export default function Header() {
               <NavLink
                 to="/"
                 onClick={() => {
-                  if (window.innerWidth < 1000) {
+                  if (window.innerWidth <= 1000) {
                     setIsOpen(false);
                   }
                 }}
@@ -66,7 +66,7 @@ export default function Header() {
               <NavLink
                 to="/about"
                 onClick={() => {
-                  if (window.innerWidth < 1000) {
+                  if (window.innerWidth <= 1000) {
                     setIsOpen(false);
                   }
                 }}
@@ -77,7 +77,7 @@ export default function Header() {
               <NavLink
                 to="/products"
                 onClick={() => {
-                  if (window.innerWidth < 1000) {
+                  if (window.innerWidth <= 1000) {
                     setIsOpen(false);
                   }
                 }}
@@ -88,7 +88,7 @@ export default function Header() {
               <NavLink
                 to="/contact"
                 onClick={() => {
-                  if (window.innerWidth < 1000) {
+                  if (window.innerWidth <= 1000) {
                     setIsOpen(false);
                   }
                 }}
