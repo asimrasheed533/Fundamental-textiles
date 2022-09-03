@@ -1,5 +1,6 @@
 $primary: #bae1ff;
 $secondary: #e96630;
+$tirtiry: #ef5b46;
 $color: #1e1e1e;
 
 *,
@@ -220,6 +221,79 @@ body {
   transition: 300ms ease-in-out;
   color: $secondary;
 }
+.home__services {
+  width: 100%;
+  max-width: 1366px;
+  padding: 4em 2em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0em auto;
+  position: relative;
+}
+.home__services__svg {
+  position: absolute;
+  top: 0px;
+  width: 250px;
+  left: 0em;
+  z-index: -1;
+}
+.home__services__left {
+  height: 180px;
+  background-color: $tirtiry;
+  display: flex;
+  align-items: center;
+  flex: 1;
+  max-width: 300px;
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 40px;
+  position: relative;
+  margin-right: 2em;
+}
+.home__services__left::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 50px;
+  width: 100vw;
+  height: 100%;
+  background-color: $tirtiry;
+  z-index: -1;
+}
+.home__services__left__heading {
+  font-size: 35px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: -0.5em;
+}
+.home__services__right {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 800px;
+}
+.home__services__right__card {
+  display: flex;
+  align-items: center;
+  width: calc(50% - 2em);
+  border-radius: 20px;
+  padding: 0em 2em;
+  transition: 300ms ease-in-out;
+  margin: 1em;
+}
+.home__services__right__card__icon {
+  margin-right: 2em;
+}
+.home__services__right__card__icon svg {
+  width: 80px;
+}
+.home__services__right__card__heading {
+  font-weight: bold;
+}
+.home__services__right__card:hover {
+  transition: 300ms ease-in-out;
+  background-color: $primary;
+}
 @media (max-width: 1200px) {
   .home__jumbotron__section__content__left__heading {
     font-size: 50px;
@@ -227,6 +301,23 @@ body {
   }
   .home__products__heading {
     font-size: 40px;
+  }
+  .home__services {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 0em;
+  }
+  .home__services__left {
+    min-height: 180px;
+    margin-right: 0em;
+  }
+  .home__services__left__heading {
+    margin-right: 5em;
+    margin-left: 0.5em;
+  }
+  .home__services__right {
+    max-width: 100%;
+    margin-top: 3em;
   }
 }
 @media (max-width: 1000px) {
@@ -301,6 +392,9 @@ body {
     font-size: 40px;
     max-width: 250px;
   }
+  .home__services__right__card {
+    width: 100%;
+  }
 }
 @media (max-width: 500px) {
   .home__products__heading {
@@ -316,5 +410,9 @@ body {
   }
   .home__products__content__card:last-child {
     margin-top: 2em;
+  }
+  .home__services {
+    padding-left: 1em;
+    padding-right: 1em;
   }
 }
