@@ -1,9 +1,45 @@
 import React from "react";
 import { Fade } from "react-reveal";
-import { knittedImage } from "../assets";
+import { fabric, knittedImage } from "../assets";
 import { ProductsKnittedGarmentsEntry } from "./ProductsKnittedGarmentsEntry";
 
 export function ProductsKnittedGarments({}) {
+  const entries = [
+    {
+      title: "Blends",
+      info: (
+        <>
+          100% Cotton, Poly-Cotton 65/35, 50/50, CVC 60/40, 55/45, Tri-blends.
+        </>
+      ),
+    },
+    {
+      title: "Dyes",
+      info: <>Reactive & Disperse reactive.</>,
+    },
+    {
+      title: "Special Finishes: ",
+      info: (
+        <>
+          Peach finish, Water repellent, Stain resistant, Silicon
+          wash,Anti-pilling, and Enzyme wash.
+        </>
+      ),
+    },
+    {
+      title: "Embellishments:",
+      info: <>Different techniques of prints, Embroidery & Badges.</>,
+    },
+    {
+      title: "Fabrication",
+      info: (
+        <>
+          Poplin, Twill, Drill, Satin, Gabardine, Stretch fabric, Yarn-dyed
+          Chambray & Canvas
+        </>
+      ),
+    },
+  ];
   return (
     <div className="products__kintted__garments">
       <Fade bottom>
@@ -20,6 +56,7 @@ export function ProductsKnittedGarments({}) {
             {
               label: "T-shirt",
               image: knittedImage,
+              defaultChecked: true,
             },
             {
               label: "Polos",
@@ -48,31 +85,50 @@ export function ProductsKnittedGarments({}) {
           label="Fabric"
           item={[
             {
-              label: "T-shirt",
-              image: knittedImage,
+              label: "Stretch Jersey",
+              image: fabric,
+              defaultChecked: true,
             },
             {
-              label: "Polos",
-              image: knittedImage,
+              label: "Rib",
+              image: fabric,
             },
             {
-              label: "Hoodies",
-              image: knittedImage,
+              label: "Interlock",
+              image: fabric,
             },
             {
-              label: "Sweatshirts",
-              image: knittedImage,
+              label: "Fleece",
+              image: fabric,
             },
             {
-              label: "Jog pants",
-              image: knittedImage,
+              label: "French Terry",
+              image: fabric,
             },
             {
-              label: "Undergarments",
-              image: knittedImage,
+              label: "Pique",
+              image: fabric,
+            },
+            {
+              label: "Thermal & Structured",
+              image: fabric,
             },
           ]}
         />
+        {entries.map((item, i) => (
+          <div className="products__kintted__garments__right__content" key={i}>
+            <Fade bottom>
+              <div className="products__kintted__garments__right__content__heading">
+                {item.title}
+              </div>
+            </Fade>
+            <Fade bottom>
+              <div className="products__kintted__garments__right__content__info">
+                {item.info}
+              </div>
+            </Fade>
+          </div>
+        ))}
       </div>
     </div>
   );

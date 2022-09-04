@@ -1,24 +1,23 @@
-import React from "react";
+import React, { useId } from "react";
 import { Fade } from "react-reveal";
 
 export function ProductsKnittedGarmentsEntryButton({
   title,
   label,
-  selected,
   setSelected,
-  ...props
+  defaultChecked,
 }) {
+  const name = useId();
   return (
     <Fade bottom>
       <div className="products__kintted__garments__right__entry__left__button">
         <input
           type="radio"
-          name={title}
+          name={name}
+          title={title}
           className="products__kintted__garments__right__entry__left__button__input"
-          defaultChecked={selected === label}
-          onClick={() => setSelected(label)}
-          readOnly
-          {...props}
+          defaultChecked={defaultChecked}
+          onChange={() => setSelected(label)}
         />
         <div className="products__kintted__garments__right__entry__left__button__content">
           {label}

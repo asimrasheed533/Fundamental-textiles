@@ -32,6 +32,7 @@ export function ProductsKnittedGarmentsEntry({ label, item, right }) {
               key={i}
               title={label}
               label={item.label}
+              defaultChecked={item.defaultChecked}
               selected={selected}
               setSelected={setSelected}
             />

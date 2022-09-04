@@ -43,7 +43,7 @@ body {
   margin: 0em auto;
 }
 .header__content__logo__img {
-  width: 250px;
+  width: 200px;
 }
 .header__content__nav {
   display: flex;
@@ -60,9 +60,9 @@ body {
   border-radius: 5px;
   color: black;
   text-decoration: none;
+  font-family: "Montserrat", sans-serif;
   cursor: pointer;
   margin-left: 1em;
-  transition: 300ms ease-in-out;
 }
 .header__content__nav .active {
   transition: 300ms ease-in-out;
@@ -720,6 +720,7 @@ body {
 }
 .products__kintted__garments__right {
   flex: 1;
+  width: 100%;
 }
 .products__kintted__garments__right__entry {
   display: flex;
@@ -759,6 +760,8 @@ body {
 .products__kintted__garments__right__entry__left__button__content {
   font-size: 16px;
 }
+.products__kintted__garments__right__entry__left__button__input:hover
+  ~ .products__kintted__garments__right__entry__left__button__content,
 .products__kintted__garments__right__entry__left__button__input:checked
   ~ .products__kintted__garments__right__entry__left__button__content {
   font-weight: bold;
@@ -774,6 +777,18 @@ body {
 }
 .products__kintted__garments__right__entry__right__img {
   width: 100%;
+}
+.products__kintted__garments__right__content {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 4em;
+}
+.products__kintted__garments__right__content__heading {
+  font-size: 22px;
+  color: $secondary;
+  font-weight: bold;
+  font-style: italic;
+  margin-bottom: 0.5em;
 }
 @media (max-width: 1440px) {
   .footer__content {

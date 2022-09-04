@@ -1,9 +1,45 @@
 import React from "react";
 import { Fade } from "react-reveal";
-import { knittedImage } from "../assets";
+import { fabrication, wovenGarments } from "../assets";
 import { ProductsKnittedGarmentsEntry } from "./ProductsKnittedGarmentsEntry";
 
 export function ProductsWovenGarments({}) {
+  const entries = [
+    {
+      title: "Blends",
+      info: (
+        <>
+          100% Cotton, Poly-Cotton 65/35, 50/50, CVC 60/40, 55/45, Tri-blends.
+        </>
+      ),
+    },
+    {
+      title: "Dyes",
+      info: <>Reactive & Disperse reactive.</>,
+    },
+    {
+      title: "Special Finishes: ",
+      info: (
+        <>
+          Peach finish, Water repellent, Stain resistant, Silicon
+          wash,Anti-pilling, and Enzyme wash.
+        </>
+      ),
+    },
+    {
+      title: "Embellishments:",
+      info: <>Different techniques of prints, Embroidery & Badges.</>,
+    },
+    {
+      title: "Fabrication",
+      info: (
+        <>
+          Poplin, Twill, Drill, Satin, Gabardine, Stretch fabric, Yarn-dyed
+          Chambray & Canvas
+        </>
+      ),
+    },
+  ];
   return (
     <div
       style={{
@@ -24,61 +60,100 @@ export function ProductsWovenGarments({}) {
             label="Product Range"
             item={[
               {
-                label: "T-shirt",
-                image: knittedImage,
+                label: "Shirts",
+                image: wovenGarments,
+                defaultChecked: true,
               },
               {
-                label: "Polos",
-                image: knittedImage,
+                label: "Blouse",
+                image: wovenGarments,
               },
               {
-                label: "Hoodies",
-                image: knittedImage,
+                label: "Jeans",
+                image: wovenGarments,
               },
               {
-                label: "Sweatshirts",
-                image: knittedImage,
+                label: "Trousers",
+                image: wovenGarments,
               },
               {
-                label: "Jog pants",
-                image: knittedImage,
+                label: "Skirts",
+                image: wovenGarments,
               },
               {
-                label: "Undergarments",
-                image: knittedImage,
+                label: "Shorts",
+                image: wovenGarments,
+              },
+              {
+                label: "and alot more.",
+                image: wovenGarments,
               },
             ]}
           />
           <ProductsKnittedGarmentsEntry
             right
-            label="Fabric"
+            label="Fabrication"
             item={[
               {
-                label: "T-shirt",
-                image: knittedImage,
+                label: "Poplin",
+                image: fabrication,
+                defaultChecked: true,
               },
               {
-                label: "Polos",
-                image: knittedImage,
+                label: "Twill",
+                image: fabrication,
               },
               {
-                label: "Hoodies",
-                image: knittedImage,
+                label: "Drill",
+                image: fabrication,
               },
               {
-                label: "Sweatshirts",
-                image: knittedImage,
+                label: "Satin",
+                image: fabrication,
               },
               {
-                label: "Jog pants",
-                image: knittedImage,
+                label: "Denim",
+                image: fabrication,
               },
               {
-                label: "Undergarments",
-                image: knittedImage,
+                label: "Gabardine",
+                image: fabrication,
+              },
+              {
+                label: "Stretch fabric",
+                image: fabrication,
+              },
+              {
+                label: "Yarn-dyed",
+                image: fabrication,
+              },
+              {
+                label: "Chambray",
+                image: fabrication,
+              },
+              {
+                label: "Canvas",
+                image: fabrication,
               },
             ]}
           />
+          {entries.map((item, i) => (
+            <div
+              className="products__kintted__garments__right__content"
+              key={i}
+            >
+              <Fade bottom>
+                <div className="products__kintted__garments__right__content__heading">
+                  {item.title}
+                </div>
+              </Fade>
+              <Fade bottom>
+                <div className="products__kintted__garments__right__content__info">
+                  {item.info}
+                </div>
+              </Fade>
+            </div>
+          ))}
         </div>
       </div>
     </div>
