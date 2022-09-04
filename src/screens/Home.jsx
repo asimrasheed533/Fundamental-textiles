@@ -3,6 +3,7 @@ import { HomeJumbotron } from "../components/HomeJumbotron";
 import { HomeProducts } from "../components/HomeProducts";
 import { HomeServices } from "../components/HomeServices";
 import { HomeQuotation } from "../components/HomeQuotation";
+import { HomeSustainability } from "../components/HomeSustainability";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <HomeProducts />
       <HomeServices />
       <HomeQuotation />
+      <HomeSustainability />
     </>
   );
 }
