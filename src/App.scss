@@ -108,11 +108,11 @@ body {
   height: 100%;
   padding: 0em 2em;
   margin: 0em auto;
-  padding-top: 7em;
+  padding-top: 3em;
 }
 .home__jumbotron__content__left {
   flex: 1;
-  margin-top: -4em;
+  margin-top: -5em;
 }
 .home__jumbotron__content__left__sub__heading {
   font-size: 20px;
@@ -290,6 +290,7 @@ body {
   padding: 0em 2em;
   transition: 300ms ease-in-out;
   margin: 1em;
+  border: 1px solid #adadad;
 }
 .home__services__right__card__icon {
   margin-right: 2em;
@@ -303,6 +304,7 @@ body {
 .home__services__right__card:hover {
   transition: 300ms ease-in-out;
   background-color: $primary;
+  border-color: $primary;
 }
 .home__quotation {
   background: linear-gradient(transparent, #f6f6ff);
@@ -445,6 +447,7 @@ body {
   width: 100%;
   max-width: 1920px;
   margin: 7em auto;
+  overflow: hidden;
 }
 .home__sustainability__svg {
   position: absolute;
@@ -452,6 +455,8 @@ body {
   right: 0px;
   width: 500px;
   z-index: -1;
+  transform: rotate(200deg);
+  opacity: 0.2;
 }
 .home__sustainability__heading {
   font-size: 40px;
@@ -532,9 +537,142 @@ body {
 .home__sustainability__content__right__img {
   width: 100%;
 }
+.footer {
+  width: 100%;
+  position: relative;
+  padding: 2em;
+  overflow: hidden;
+}
+.footer__content {
+  position: relative;
+  padding: 5em;
+  border-radius: 20px;
+  border-top-right-radius: 190px;
+  background-color: $color;
+  width: 100%;
+  max-width: 1920px;
+  margin: 0em auto;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 15em;
+  padding-bottom: 10em;
+}
+.footer__content * {
+  color: white;
+}
+.footer__content::after {
+  content: "";
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  width: 150px;
+  height: 150px;
+  background-color: $primary;
+  border-radius: 150px;
+}
+.footer__content::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: -200px;
+  width: 320px;
+  height: 320px;
+  border: 1px solid $primary;
+  border-radius: 400px;
+}
+.footer__content__col {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-right: 2em;
+}
+.footer__content__col:first-child {
+  min-width: 30%;
+}
+.footer__content__col__logo__img {
+  width: 200px;
+}
+.footer__content__col__info {
+  width: 100%;
+  max-width: 300px;
+  margin-top: 1em;
+}
+.footer__content__col__heading {
+  font-size: 20px;
+  font-weight: bold;
+  font-style: italic;
+  margin-bottom: 1em;
+}
+.footer__content__col__link {
+  text-decoration: none;
+  margin-top: 1em;
+  position: relative;
+  margin-left: 2em;
+  transition: 300ms ease-in-out;
+}
+.footer__content__col__link::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -2em;
+  width: 8px;
+  border-radius: 50px;
+  height: 8px;
+  background-color: white;
+  transition: 300ms ease-in-out;
+}
+.footer__content__col__link:hover {
+  transition: 300ms ease-in-out;
+  color: $secondary;
+}
+.footer__content__col__link:hover::before {
+  transition: 300ms ease-in-out;
+  background-color: $secondary;
+}
+.footer__content__col__button {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  color: $color;
+  padding: 0em 1.5em;
+  text-decoration: none;
+  border-radius: 17px;
+  margin-top: 2em;
+  background-color: $primary;
+  font-weight: 500;
+  transition: 300ms ease-in-out;
+}
+.footer__content__col__button:hover {
+  transition: 300ms ease-in-out;
+  background-color: $secondary;
+  color: white;
+}
+@media (max-width: 1440px) {
+  .footer__content {
+    padding: 3em;
+    padding-right: 10em;
+    padding-bottom: 5em;
+  }
+  .footer__content * {
+    transform: scale(0.9);
+  }
+}
 @media (max-width: 1350px) {
   .home__sustainability__content__left__card {
     width: 47%;
+  }
+  .footer__content {
+    flex-wrap: wrap;
+    padding: 5rem;
+  }
+  .footer__content * {
+    transform: scale(1);
+  }
+  .footer__content__col {
+    min-width: calc(50% - 2em) !important;
+    margin-bottom: 3em;
   }
 }
 @media (max-width: 1200px) {
@@ -681,6 +819,9 @@ body {
   .home__sustainability__content__left__card {
     width: 47%;
   }
+  .footer__content__col {
+    min-width: 100% !important;
+  }
 }
 @media (max-width: 700px) {
   .home__jumbotron__content__left__heading {
@@ -694,7 +835,22 @@ body {
     min-height: 400px;
   }
 }
+@media (max-width: 600px) {
+  .footer__content {
+    padding: 3em;
+  }
+  .footer__content::before {
+    display: none;
+  }
+}
 @media (max-width: 500px) {
+  .footer__content {
+    border-top-right-radius: 150px;
+  }
+  .footer__content::after {
+    width: 100px;
+    height: 100px;
+  }
   .home__products__heading {
     margin-bottom: 0em;
     font-size: 35px;
