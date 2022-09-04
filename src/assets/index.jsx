@@ -6,3 +6,4 @@ export { default as womanGarments } from "./womanGarments.png";
 export { default as workGarments } from "./workGarments.png";
 export { default as quotationImage } from "./quotationImage.png";
 export { default as sustainabilityImage } from "./sustainabilityImage.png";
+export { default as knittedImage } from "./knittedImage.png";
