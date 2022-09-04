@@ -354,6 +354,90 @@ body {
   left: -1em;
   z-index: -1;
 }
+.contact__jumbotron {
+  width: 100%;
+  background-color: $primary;
+  position: relative;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contact__jumbotron svg {
+  position: absolute;
+  height: 350px;
+  width: 100%;
+}
+.contact__jumbotron__heading {
+  font-size: 40px;
+  font-style: italic;
+  font-weight: bold;
+  margin-top: 3em;
+  position: relative;
+  z-index: 1;
+}
+.contact__info {
+  width: 100%;
+  max-width: 1200px;
+  margin: 4em auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1;
+  position: relative;
+  padding: 0em 1em;
+  flex-wrap: wrap;
+}
+.contact__info__card {
+  padding: 2.5em;
+  border: 1px solid $color;
+  width: 30%;
+  min-height: 240px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin: 1em;
+  border-radius: 20px;
+  transition: 300ms ease-in-out;
+  padding-bottom: 2em;
+  background-color: white;
+}
+.contact__info__card__heading {
+  margin: 0.5em 0em;
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 1em;
+}
+.contact__info__card__info {
+  min-height: 30px;
+  word-break: break-all;
+}
+.contact__info__card:hover {
+  transition: 300ms ease-in-out;
+  background-color: $secondary;
+  border-color: $secondary;
+}
+.contact__info__card:hover * {
+  color: white;
+}
+.contact__map__wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0em 2em;
+}
+.contact__map {
+  width: 100%;
+  max-width: 1366px;
+  border: none;
+  margin: 0em auto;
+  margin-top: -10em;
+  border-radius: 20px;
+  height: 800px;
+  margin-bottom: 4em;
+}
+
 @media (max-width: 1200px) {
   .home__jumbotron__content__left__heading {
     font-size: 50px;
@@ -443,6 +527,14 @@ body {
     max-width: 700px;
   }
 }
+@media (max-width: 950px) {
+  .contact__info__card {
+    width: 100%;
+  }
+  .contact__map {
+    margin-top: 0em;
+  }
+}
 @media (max-width: 850px) {
   .home__products__content {
     flex-wrap: wrap;
@@ -486,6 +578,9 @@ body {
   }
   .home__services__right__card {
     width: 100%;
+  }
+  .contact__jumbotron {
+    min-height: 400px;
   }
 }
 @media (max-width: 500px) {
