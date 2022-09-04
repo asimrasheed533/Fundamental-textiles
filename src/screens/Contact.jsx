@@ -1,6 +1,6 @@
 import React from "react";
-import { ContactInfo } from "./ContactInfo";
-import { ContactJumbotron } from "./ContactJumbotron";
+import { ContactInfo } from "../components/ContactInfo";
+import { ContactJumbotron } from "../components/ContactJumbotron";
 
 export default function Contact() {
   return (

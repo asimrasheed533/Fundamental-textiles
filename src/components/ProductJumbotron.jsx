@@ -1,6 +1,7 @@
 import React from "react";
+import { Fade } from "react-reveal";
 
-export function ContactJumbotron({}) {
+export function ProductJumbotron() {
   return (
     <div className="contact__jumbotron">
       <svg
@@ -29,7 +30,9 @@ export function ContactJumbotron({}) {
           </linearGradient>
         </defs>
       </svg>
-      <div className="contact__jumbotron__heading">Contact Us</div>
+      <Fade bottom>
+        <div className="contact__jumbotron__heading">Products</div>
+      </Fade>
     </div>
   );
 }
