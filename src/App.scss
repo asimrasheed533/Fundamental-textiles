@@ -26,6 +26,16 @@ body {
   font-family: "Montserrat", sans-serif;
   overflow-x: hidden;
 }
+body::-webkit-scrollbar {
+  width: 12px;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: $secondary;
+  border-radius: 50px;
+}
+body::-webkit-scrollbar {
+  background-color: white;
+}
 .header {
   width: 100%;
   position: fixed;
@@ -525,7 +535,7 @@ body {
   transition: 300ms ease-in-out;
 }
 .home__sustainability__content__left__card__heading {
-  font-family: GoudyOldStyle;
+  font-family: GoudyOldStyle, sans-serif;
   font-size: 20px;
   text-align: center;
   margin-top: 1em;
