@@ -45,6 +45,8 @@ export function ProductsWovenGarments({}) {
       style={{
         background: "linear-gradient(transparent, transparent, #f6f6ff)",
         width: "100%",
+        maxWidth: "1920px",
+        margin: "0em auto",
       }}
     >
       <div className="products__kintted__garments products__kintted__garments__reverse">

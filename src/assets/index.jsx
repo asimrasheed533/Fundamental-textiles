@@ -10,3 +10,5 @@ export { default as knittedImage } from "./knittedImage.png";
 export { default as fabric } from "./fabric.png";
 export { default as wovenGarments } from "./wovenGarments.png";
 export { default as fabrication } from "./fabrication.png";
+export { default as supplyPartnerships } from "./supplyPartnerships.png";
+export { default as qualityPolicy } from "./qualityPolicy.png";
