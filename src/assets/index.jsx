@@ -13,3 +13,4 @@ export { default as fabrication } from "./fabrication.png";
 export { default as supplyPartnerships } from "./supplyPartnerships.png";
 export { default as qualityPolicy } from "./qualityPolicy.png";
 export { default as uniform } from "./uniform.png";
+export { default as aboutUs } from "./aboutUs.png";
