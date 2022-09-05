@@ -3,7 +3,7 @@ import { Fade } from "react-reveal";
 import { fabric, knittedImage } from "../assets";
 import { ProductsKnittedGarmentsEntry } from "./ProductsKnittedGarmentsEntry";
 
-export function ProductsKnittedGarments({}) {
+export function ProductsKnittedGarments() {
   const entries = [
     {
       title: "Blends",
@@ -52,6 +52,7 @@ export function ProductsKnittedGarments({}) {
       <div className="products__kintted__garments__right">
         <ProductsKnittedGarmentsEntry
           label="Product Range"
+          name="Kintted Garments Product Range"
           item={[
             {
               label: "T-shirt",
@@ -83,6 +84,7 @@ export function ProductsKnittedGarments({}) {
         <ProductsKnittedGarmentsEntry
           right
           label="Fabric"
+          name="Kintted Garments Fabric"
           item={[
             {
               label: "Stretch Jersey",

@@ -2,7 +2,7 @@ import React from "react";
 import { Fade } from "react-reveal";
 import { supplyPartnerships } from "../assets";
 
-export function AboutSupplyPartnership({}) {
+export function AboutSupplyPartnership() {
   return (
     <div className="home__quotation">
       <div className="home__quotation__content">

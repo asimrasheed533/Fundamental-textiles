@@ -2,7 +2,7 @@ import React from "react";
 import { Fade } from "react-reveal";
 import { qualityPolicy } from "../assets";
 
-export function AboutQualityPolicy({}) {
+export function AboutQualityPolicy() {
   return (
     <div className="home__quotation">
       <div className="home__quotation__content">

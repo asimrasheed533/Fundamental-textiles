@@ -1,13 +1,13 @@
-import React, { useId } from "react";
+import React from "react";
 import { Fade } from "react-reveal";
 
 export function ProductsKnittedGarmentsEntryButton({
   title,
   label,
-  setSelected,
   defaultChecked,
+  setSelected,
+  name,
 }) {
-  const name = useId();
   return (
     <Fade bottom>
       <div className="products__kintted__garments__right__entry__left__button">

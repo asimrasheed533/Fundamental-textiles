@@ -3,7 +3,7 @@ import { Fade } from "react-reveal";
 import { fabrication, wovenGarments } from "../assets";
 import { ProductsKnittedGarmentsEntry } from "./ProductsKnittedGarmentsEntry";
 
-export function ProductsWovenGarments({}) {
+export function ProductsWovenGarments() {
   const entries = [
     {
       title: "Blends",
@@ -60,6 +60,7 @@ export function ProductsWovenGarments({}) {
         <div className="products__kintted__garments__right">
           <ProductsKnittedGarmentsEntry
             label="Product Range"
+            name="Woven Garments Product Range"
             item={[
               {
                 label: "Shirts",
@@ -95,6 +96,7 @@ export function ProductsWovenGarments({}) {
           <ProductsKnittedGarmentsEntry
             right
             label="Fabrication"
+            name="Woven Garments Fabrication"
             item={[
               {
                 label: "Poplin",

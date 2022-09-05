@@ -12,3 +12,4 @@ export { default as wovenGarments } from "./wovenGarments.png";
 export { default as fabrication } from "./fabrication.png";
 export { default as supplyPartnerships } from "./supplyPartnerships.png";
 export { default as qualityPolicy } from "./qualityPolicy.png";
+export { default as uniform } from "./uniform.png";

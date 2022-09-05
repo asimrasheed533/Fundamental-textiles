@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { Fade } from "react-reveal";
 import { ProductsKnittedGarmentsEntryButton } from "./ProductsKnittedGarmentsEntryButton";
 
-export function ProductsKnittedGarmentsEntry({ label, item, right }) {
+export function ProductsKnittedGarmentsEntry({ label, item, right, name }) {
   const [selected, setSelected] = React.useState("");
   useEffect(() => {
     item
@@ -11,7 +11,6 @@ export function ProductsKnittedGarmentsEntry({ label, item, right }) {
         setSelected(item.label);
       });
   }, []);
-  console.log(selected);
   return (
     <div
       className={
@@ -33,6 +32,7 @@ export function ProductsKnittedGarmentsEntry({ label, item, right }) {
               title={label}
               label={item.label}
               defaultChecked={item.defaultChecked}
+              name={name}
               selected={selected}
               setSelected={setSelected}
             />
