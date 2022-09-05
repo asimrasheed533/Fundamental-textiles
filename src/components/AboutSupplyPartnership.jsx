@@ -4,7 +4,7 @@ import { supplyPartnerships } from "../assets";
 
 export function AboutSupplyPartnership() {
   return (
-    <div className="home__quotation">
+    <div className="home__quotation" style={{ background: "transparent" }}>
       <div className="home__quotation__content">
         <Fade bottom>
           <div className="home__quotation__content__heading">
