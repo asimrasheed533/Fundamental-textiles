@@ -5,6 +5,7 @@ import { AboutSupplyPartnership } from "../components/AboutSupplyPartnership";
 import { AboutJumbotron } from "../components/AboutJumbotron";
 import { AboutInfo } from "../components/AboutInfo";
 import { AboutVendorCertification } from "../components/AboutVendorCertification";
+import { AboutTeam } from "../components/AboutTeam";
 
 export default function About() {
   return (
@@ -13,6 +14,7 @@ export default function About() {
       <AboutInfo />
       <AboutQualityPolicy />
       <HomeServices />
+      <AboutTeam />
       <AboutSupplyPartnership />
       <AboutVendorCertification />
     </>

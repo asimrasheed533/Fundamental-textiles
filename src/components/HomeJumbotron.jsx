@@ -59,7 +59,7 @@ export function HomeJumbotron() {
           </Fade>
         </div>
         <div className="home__jumbotron__content__right">
-          <Fade bottom>
+          <Fade>
             <img
               src={homeBanner}
               alt="homeBanner"

@@ -47,7 +47,13 @@ export default function Header() {
         }
       >
         <div className="header__content">
-          <NavLink to="/" className="header__content__logo">
+          <NavLink
+            to="/"
+            onClick={() => {
+              window.scrollTo({ top: 0, behavior: "smooth" });
+            }}
+            className="header__content__logo"
+          >
             <img src={logo} alt="logo" className="header__content__logo__img" />
           </NavLink>
           {isOpen ? (
@@ -58,6 +64,7 @@ export default function Header() {
                   if (window.innerWidth <= 1000) {
                     setIsOpen(false);
                   }
+                  window.scrollTo({ top: 0, behavior: "smooth" });
                 }}
                 className="header__content__nav__link"
               >
@@ -69,6 +76,7 @@ export default function Header() {
                   if (window.innerWidth <= 1000) {
                     setIsOpen(false);
                   }
+                  window.scrollTo({ top: 0, behavior: "smooth" });
                 }}
                 className="header__content__nav__link"
               >
@@ -80,6 +88,7 @@ export default function Header() {
                   if (window.innerWidth <= 1000) {
                     setIsOpen(false);
                   }
+                  window.scrollTo({ top: 0, behavior: "smooth" });
                 }}
                 className="header__content__nav__link"
               >
@@ -91,6 +100,7 @@ export default function Header() {
                   if (window.innerWidth <= 1000) {
                     setIsOpen(false);
                   }
+                  window.scrollTo({ top: 0, behavior: "smooth" });
                 }}
                 className="header__content__nav__link"
               >
