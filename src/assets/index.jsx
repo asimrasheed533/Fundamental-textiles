@@ -14,3 +14,6 @@ export { default as supplyPartnerships } from "./supplyPartnerships.png";
 export { default as qualityPolicy } from "./qualityPolicy.png";
 export { default as uniform } from "./uniform.png";
 export { default as aboutUs } from "./aboutUs.png";
+export { default as aboutImage } from "./aboutImage.png";
+export { default as mission } from "./mission.png";
+export { default as vision } from "./vision.png";
