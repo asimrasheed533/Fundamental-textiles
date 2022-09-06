@@ -12,7 +12,7 @@ export default defineConfig({
     react(),
     viteCompression({
       algorithm: "brotliCompress",
-      threshold: 500,
+      threshold: 300,
     }),
     ViteWebfontDownload(),
     chunkSplitPlugin(),

@@ -8,8 +8,11 @@ export function ProductsUniforms() {
     <div className="home__sustainability">
       <div className="home__sustainability__heading">
         <svg
-          width="385"
-          height="385"
+          style={{
+            width: "50%",
+            left: "25%",
+            top: "-70",
+          }}
           viewBox="0 0 385 385"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
