@@ -39,7 +39,7 @@ export default function Footer() {
             Home
           </Link>
           <Link
-            to="/"
+            to="/about"
             onClick={() => {
               window.scrollTo({ top: 0, behavior: "smooth" });
             }}
@@ -47,17 +47,9 @@ export default function Footer() {
           >
             About
           </Link>
+
           <Link
-            to="/"
-            onClick={() => {
-              window.scrollTo({ top: 0, behavior: "smooth" });
-            }}
-            className="footer__content__col__link"
-          >
-            Why
-          </Link>
-          <Link
-            to="/"
+            to="/products"
             onClick={() => {
               window.scrollTo({ top: 0, behavior: "smooth" });
             }}
@@ -65,17 +57,9 @@ export default function Footer() {
           >
             Services
           </Link>
+
           <Link
-            to="/"
-            onClick={() => {
-              window.scrollTo({ top: 0, behavior: "smooth" });
-            }}
-            className="footer__content__col__link"
-          >
-            Works
-          </Link>
-          <Link
-            to="/"
+            to="/contact"
             onClick={() => {
               window.scrollTo({ top: 0, behavior: "smooth" });
             }}
