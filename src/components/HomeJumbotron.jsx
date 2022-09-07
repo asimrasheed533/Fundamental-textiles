@@ -53,7 +53,7 @@ export function HomeJumbotron() {
             </div>
           </Fade>
           <Fade bottom>
-            <Link to="/" className="home__jumbotron__content__left__link">
+            <Link to="/about" className="home__jumbotron__content__left__link">
               Learn More
             </Link>
           </Fade>
